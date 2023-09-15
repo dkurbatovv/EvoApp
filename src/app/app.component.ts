@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'EvoApp';
-  firstMessage = 'Hello, this is my first App!';
+  items = [
+    { name: 'Объект 1', currentDate : new Date() },
+    { name: 'Объект 2', currentDate : new Date() },
+    { name: 'Объект 3', currentDate : new Date() }
+  ];
 }

@@ -1,2 +1,6 @@
-<p>{{firstMessage}}</p>
-<app-count></app-count>
+<p>Директивы и Pipe</p>
+<ul>
+    <li *ngFor="let item of items">{{ item.name }} - {{ item.currentDate  | date:'dd/MM/yyyy' }}</li>
+</ul>
+
+<p>А тут, используя Pipe, прибавляем к заданному числу(10) значение 5, и в результате получаем: {{ 10 | addFive }}</p>
